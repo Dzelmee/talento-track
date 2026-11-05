@@ -1,0 +1,34 @@
+{
+  "name": "TalentoTrack",
+  "subtitle": "Uma jornada melhor para cada talento.",
+  "plural": "registros",
+  "singular": "Registro",
+  "fields": [
+    {
+      "key": "candidato",
+      "label": "Candidato",
+      "type": "text"
+    },
+    {
+      "key": "vaga",
+      "label": "Vaga",
+      "type": "text"
+    },
+    {
+      "key": "etapa",
+      "label": "Etapa",
+      "type": "select",
+      "options": [
+        "Inscrição",
+        "Triagem",
+        "Entrevista",
+        "Oferta"
+      ]
+    },
+    {
+      "key": "contato",
+      "label": "E-mail",
+      "type": "email"
+    }
+  ]
+}

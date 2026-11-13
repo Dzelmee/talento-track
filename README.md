@@ -1,26 +1,35 @@
-# norte / people — Talento é mais que currículo.
+# norte / people
 
-Projeto Full Stack demonstrativo, com interface própria para o segmento **recruit**.
+Criei este projeto para explorar uma interface de organização de registros de recrutamento. A ideia foi reunir cadastro, consulta e acompanhamento das informações em uma página responsiva.
 
-## Stack
-HTML5, CSS3 (Scroll-Driven Animations, layouts responsivos), JavaScript ES Modules, Node.js (HTTP nativo), JSON local.
+## Funcionalidades
 
-## Executar
+- Criar, editar, buscar e excluir registros.
+- Validar entradas no servidor e manter os dados em arquivo JSON local.
+- Exibir indicadores calculados a partir dos registros existentes.
+- Alternar entre temas claro e escuro, com preferência salva no navegador.
+- Navegar por uma interface responsiva com animações que respeitam a preferência de movimento reduzido.
+
+## Tecnologias
+
+HTML, CSS, JavaScript com ES Modules e Node.js (servidor HTTP nativo).
+
+## Rodar localmente
+
 ```bash
 npm test
 npm start
 ```
-Acesse http://localhost:3000. Configure `PORT` para mudar a porta.
 
-## Funcionalidades
-- Operações CRUD com persistência em arquivo JSON e validação no servidor.
-- Busca, formulários em diálogo nativo, métricas calculadas a partir dos registros.
-- Tema claro/escuro salvo no navegador, parallax e animações progressivas (com redução de movimento).
-- Layout específico do produto e seções editoriais com fotografias externas.
-- Indicadores por tipo de registro.
+Abra `http://localhost:3000`. A porta pode ser alterada com `PORT`.
 
 ## Limitações
-Projeto de portfólio: sem autenticação, multiusuários, pagamentos reais ou banco de dados de produção. Fotografias remotas precisam de conexão à internet. Estatísticas exibidas são calculadas a partir dos dados salvos e começam zeradas. A checagem de conflito de agenda na interface não é garantia de exclusividade sob concorrência no servidor.
 
-## Fotos e licença
-Imagens remotas hospedadas no Unsplash (https://unsplash.com/license). Conferir direitos de pessoas, marcas e condições atuais antes de uso comercial. URLs: https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85, https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=85.
+É uma demonstração de portfólio, não um sistema de recrutamento pronto para uso real. Não inclui autenticação, controle de acesso por usuário ou banco de dados de produção. Os dados são mantidos em JSON local, e as fotografias externas dependem de conexão com a internet.
+
+## Imagens
+
+Fotografias do [Unsplash](https://unsplash.com/license):
+
+- https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85
+- https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=85

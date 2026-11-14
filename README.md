@@ -1,35 +1,34 @@
 # norte / people
 
-Criei este projeto para explorar uma interface de organização de registros de recrutamento. A ideia foi reunir cadastro, consulta e acompanhamento das informações em uma página responsiva.
+Montei o norte / people para explorar a organização de informações de recrutamento em uma interface web. O foco foi tornar o cadastro e a consulta de registros fáceis de acompanhar, inclusive em telas menores.
 
 ## Funcionalidades
 
 - Criar, editar, buscar e excluir registros.
-- Validar entradas no servidor e manter os dados em arquivo JSON local.
-- Exibir indicadores calculados a partir dos registros existentes.
-- Alternar entre temas claro e escuro, com preferência salva no navegador.
-- Navegar por uma interface responsiva com animações que respeitam a preferência de movimento reduzido.
+- Validar entradas no servidor e armazenar os dados em JSON local.
+- Exibir indicadores calculados com os registros cadastrados.
+- Alternar entre temas claro e escuro, mantendo a preferência no navegador.
+- Navegar com layout responsivo e animações compatíveis com movimento reduzido.
 
-## Tecnologias
-
-HTML, CSS, JavaScript com ES Modules e Node.js (servidor HTTP nativo).
-
-## Rodar localmente
+## Como executar
 
 ```bash
 npm test
 npm start
 ```
 
-Abra `http://localhost:3000`. A porta pode ser alterada com `PORT`.
+O servidor inicia em `http://localhost:3000`. Para usar outra porta, configure `PORT`.
+
+## Tecnologias e armazenamento
+
+Usei HTML, CSS e JavaScript com ES Modules no front-end. O servidor é feito em Node.js, usando o módulo HTTP nativo. Os registros ficam em um arquivo JSON local.
 
 ## Limitações
 
-É uma demonstração de portfólio, não um sistema de recrutamento pronto para uso real. Não inclui autenticação, controle de acesso por usuário ou banco de dados de produção. Os dados são mantidos em JSON local, e as fotografias externas dependem de conexão com a internet.
+Esta é uma aplicação de demonstração, não um serviço pronto para produção. Ainda não há autenticação, permissões por usuário nem banco de dados de produção. O armazenamento em JSON também não foi pensado para várias instâncias simultâneas.
 
 ## Imagens
 
 Fotografias do [Unsplash](https://unsplash.com/license):
-
 - https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85
 - https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=85
